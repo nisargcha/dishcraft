@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Craft.!</title>
+    <link rel="icon" href="../images/mainlogo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="p-4" id="head-main">
+        <h1 class="text-6xl font-bold mb-4">Dish Craft</h1>
+        <nav>
+            <ul class="flex space-x-4 pt-2">
+                <li><a href="#" class="hover:text-red text-2xl" id="nav-item">Home</a></li>
+                <li><a href="#" class="hover:text-red text-2xl" id="nav-item">Recipes</a></li>
+                <li><a href="#" class="hover:text-red text-2xl" id="nav-item">Cuisine</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="flex justify-center">
+        <div class="search_container mt-5 flex-col align-middle">
+            <p class="search_title text-4xl pl-36">Search Recipes</p>
+            <input class="search_input p-6 mt-5 rounded-xl h-3 text-white" type="text" id="search_input" placeholder="Tasty recipes">
+            <button type="button" class="rounded-lg text-white h-12 w-24" id="search_btn" onclick="search()">Search</button>
+        </div>   
+    </main>
+    <div  class="container" id="container"></div>
+
+    <div class="flex justify-center align-middle" id="loader">
+        <dotlottie-player src="https://lottie.host/9b7ee02b-bc7a-4b6a-899c-ced77285ba0f/BWqJZl28ca.json" 
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+        </dotlottie-player>
+    </div>
+    <div class="modal" id="recipeModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 id="recipeTitleModal"></h1>
+                <img id="recipeImageModal" alt="Recipe Image">
+            </div>
+            <div id="recipeInstructionsModal" class="modal-body"></div>
+        </div>
+               
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="script.js"></script>
+</body>
+</html>

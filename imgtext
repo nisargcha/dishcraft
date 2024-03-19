@@ -1,0 +1,20 @@
+<div class="recipe-card">
+                <div class='recipe-img'>
+                  <img src="http://forkify-api.herokuapp.com/images/BBQChickenPizzawithCauliflowerCrust5004699695624ce.jpg"/>
+                </div>
+            <h1 class="recipe-title">Pizza</h1>
+            <button type="button" class="recipe-button">View Recipe</button>
+</div>
+
+// function search(){
+  //     let res = document.getElementById('search_input').value;
+  //     let finurl = url+res+key;
+  //     let p  = fetch(finurl)
+  //         p.then((val)=>{
+  //         return val.json();
+  //     }).then((response)=>{
+  //         data = response;
+  //         console.log(response);
+  //     })
+      
+  // }

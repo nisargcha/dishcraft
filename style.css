@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Salsa', cursive; */
+
+/*
+Colors:-
+
+maize :-#fff07c
+fulvous:- #e8871e
+darkred:- #8c1c13
+Black :- #050609
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /* display: block; */
+    background-color: #ffebfa;
+}
+#nav-item{
+    font-family: 'Salsa', cursive;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+#head-main{
+    background-color: #fdb8e7;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 20px;
+
+}
+.search_title{
+    font-family: 'Salsa', cursive;
+}
+.search_input{
+    width: 30rem;
+    background-color: #ff96ef;
+    color: white;
+    border:  7px;
+}
+input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-family: 'Salsa', cursive;
+}
+::-ms-input-placeholder{
+    color:white ;
+}
+#search_btn{
+    outline: none;
+    background-color:#8c1c13;
+    font-family: 'Salsa', cursive;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.25rem;
+}
+
+.recipe-card {
+    background: #ffcbfb;
+    height: 28rem; /* Adjust the height as needed */
+    width: 20rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 10px 10px grey;
+    transition: transform 300ms;
+    overflow: hidden;
+}
+
+.recipe-card:hover {
+    transform: scale(1.01);
+}
+
+.recipe-img {
+    overflow: hidden;
+    border-radius: 0.75rem;
+    height: 60%; /* Adjust the image height as needed */
+}
+.recipe-image {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipe-title {
+    margin: 0.75rem;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    line-height: 2rem; /* Adjust the line height as needed */
+    font-weight: bold;
+    word-spacing: 3px; /* Adjust the word spacing as needed */
+    flex: 1; /* Allow the title to take up the remaining space */
+}
+
+.recipe-button {
+    background-color: rgb(249, 83, 232);
+    border-radius: 0.50rem;
+    height: 2.25rem;
+    width: 6rem;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Salsa', cursive;
+    /* margin-left: 7px; */
+    margin: 0.5rem; /* Adjust the margin as needed */
+    align-self: center; /* Center the button horizontally */
+}.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 25%;
+    width: 75%;
+    height: 50%;
+    overflow-y: scroll; 
+    background-color: #ffebfa; 
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+#recipeTitleModal {
+    font-family: 'Salsa', cursive;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.modal-content {
+    display: flex;
+}
+
+.modal-image {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 16px; /* Add spacing below the image */
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+.quantity {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    text-align: left;
+}
+
+.modal-body {
+    flex-grow: 1;
+    overflow-y: auto;
+}
